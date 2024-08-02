@@ -1,0 +1,9 @@
+1. Explain Database along with the syntax with a basic example.
+2. Explain the differences between DB vs DBMS vs SQL vs MySQL
+3. How tables can be created in MySQL? Explain with an example along with Syntax.
+4. Explain DDL sub language with the syntaxes and Give an example to create a table based on below req:
+	Name : Employee
+	column1 -> Name [with size of 40 characters]
+	column2 -> Age [integer]
+	column3 -> Gender [with size of 10 characters]
+	column4 -> Salary [with size of 7 characters]
