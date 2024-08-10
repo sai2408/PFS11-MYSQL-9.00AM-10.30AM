@@ -1,0 +1,11 @@
+1. Explain DDL, DML, DQL Sub Languages with syntaxes. 
+[4M]
+2. Assume Your are owning a company and you have a database with the name shopping. You have to create a two managers with the name m1 followed with 1234 password and m2 followed with 12345 password.
+	2.1. Give permissions of select, insert and delete to m1.
+	2.2. Give Permissions of Select and insert to m2.
+[2M]
+3. Create a table with the name employees consists of name, id, mobile, email, salary and branch 
+	3.1. Write a syntax to access all the values whose 
+email is empty.
+	3.2. Write a syntax to access all the values whose salary is more than 20000 and belongs to ECE branch.
+[2M]rg
