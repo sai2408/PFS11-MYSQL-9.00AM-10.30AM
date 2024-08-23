@@ -1,0 +1,46 @@
+CREATE DATABASE INFO;
+
+USE INFO;
+
+-- Create Customers Table
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(255),
+    ContactName VARCHAR(255),
+    Country VARCHAR(255)
+);
+
+-- Create Orders Table
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+-- Create Products Table
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(255),
+    Price DECIMAL(10, 2)
+);
+
+
+
+-- Insert records into Customers Table
+INSERT INTO Customers (CustomerID, CustomerName, ContactName, Country) VALUES
+(1, 'Alfreds', 'Maria', 'Germany'),
+(2, 'Ana Trujillo', 'Ana', 'Mexico'),
+(3, 'Antonio', 'Antonio', 'Mexico');
+
+-- Insert records into Orders Table
+INSERT INTO Orders (OrderID, CustomerID, OrderDate) VALUES
+(1, 1, '2023-01-01'),
+(2, 2, '2023-01-02'),
+(3, 3, '2023-01-03');
+
+-- Insert records into Products Table
+INSERT INTO Products (ProductID, ProductName, Price) VALUES
+(1, 'Apples', 1.00),
+(2, 'Oranges', 2.00),
+(3, 'Bananas', 1.50);
